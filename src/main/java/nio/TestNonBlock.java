@@ -63,7 +63,7 @@ public class TestNonBlock {
                     SocketChannel client = (SocketChannel) sk.channel();
                     int len = client.read(buffer);
                     buffer.flip();
-                    System.out.println(new String(buffer.array(), len));
+                    System.out.println(new String(buffer.array(), 0, len));
                 }
 
 //                iter.remove();
